@@ -1,0 +1,46 @@
+# Fichiers de compilation Java #
+*.class
+
+# Packages #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Dossiers de build Maven/Gradle #
+target/
+build/
+out/
+
+# Fichiers et dossiers de configuration de l'IDE IntelliJ IDEA #
+.idea/
+*.iml
+*.iws
+
+# Dossier de configuration Eclipse (si utilisé) #
+.eclipse
+.project
+.classpath
+.settings/
+
+# Fichiers de logs et de données temporaires #
+*.log
+*.dat
+*.tmp
+
+# Autres fichiers et dossiers système #
+.DS_Store
+Thumbs.db
+
+# Fichiers spécifiques à Windows #
+*.dll
+*~
+
+# Fichiers spécifiques à MacOS #
+.DS_Store
+
+# Fichiers de configuration de l'environnement local #
+.env
+.env.local
