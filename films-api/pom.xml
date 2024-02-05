@@ -23,6 +23,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
             <version>1.10.0</version>
@@ -79,7 +84,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>be.vinci.Main</mainClass>
+                    <mainClass>be.vinci.main.Main</mainClass>
                 </configuration>
             </plugin>
             <plugin>

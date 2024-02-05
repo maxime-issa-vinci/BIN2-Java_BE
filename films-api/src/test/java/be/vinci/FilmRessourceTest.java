@@ -1,5 +1,6 @@
 package be.vinci;
 
+import be.vinci.main.Main;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.WebTarget;

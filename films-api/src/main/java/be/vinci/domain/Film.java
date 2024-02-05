@@ -1,4 +1,4 @@
-package be.vinci;
+package be.vinci.domain;
 
 public class Film {
 
