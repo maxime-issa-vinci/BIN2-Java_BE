@@ -13,6 +13,7 @@ import java.util.List;
 /**
  * Root resource (exposed at "myresource" path)
  */
+// 
 @Singleton
 @Path("films")
 public class FilmRessource {
