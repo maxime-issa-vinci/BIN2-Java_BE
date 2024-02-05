@@ -1,9 +1,7 @@
 package be.vinci.services;
 
 import be.vinci.domain.Film;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
+import be.vinci.services.utils.Json;
 import org.apache.commons.text.StringEscapeUtils;
 
 import java.util.List;

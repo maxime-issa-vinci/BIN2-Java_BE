@@ -1,0 +1,58 @@
+@baseUrl = http://localhost:8080
+
+### Read All films
+GET {{baseUrl}}/films
+
+### Login the default user
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+  "login":"james",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
+
+### Create One film
+POST {{baseUrl}}/films
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "Venom: Let There Be Carnage",
+  "duration": 9,
+  "budget": 110,
+  "link": "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
+}
+
+### Delete One film
+DELETE {{baseUrl}}/films/5
+Authorization: {{jamesToken}}
+
+### Update One film
+PUT {{baseUrl}}/films/4
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "Venom: Let There Be Carnage",
+  "duration": 97,
+  "budget": 110,
+  "link": "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
+}
+
+### Create One film with dangerous characters
+POST {{baseUrl}}/films
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "<img src=\"#\" onerror=\"alert('You have been hacked !')\">",
+  "duration": 9,
+  "budget": 110,
+  "link": "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
+}

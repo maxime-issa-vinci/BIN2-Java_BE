@@ -1,4 +1,4 @@
-package be.vinci.services;
+package be.vinci.services.utils;
 
 import be.vinci.domain.Film;
 import be.vinci.utils.Config;
